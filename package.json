@@ -1,0 +1,44 @@
+{
+  "name": "vulcanize",
+  "version": "1.5.1",
+  "description": "Process Web Components into one output file",
+  "main": "lib/vulcan.js",
+  "bin": {
+    "vulcanize": "bin/vulcanize"
+  },
+  "dependencies": {
+    "dom5": "^1.0.2",
+    "es6-promise": "^2.1.0",
+    "hydrolysis": "^1.5.0",
+    "nopt": "^3.0.1"
+  },
+  "devDependencies": {
+    "jshint": "^2.7.0",
+    "mocha": "^2.2.4"
+  },
+  "scripts": {
+    "test": "node_modules/.bin/jshint --verbose lib/*.js bin/* test/*.js && node_modules/.bin/mocha"
+  },
+  "author": "Daniel Freedman",
+  "license": {
+    "type": "BSD",
+    "url": "http://polymer.github.io/LICENSE.txt"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "keywords": [
+    "web components",
+    "polymer"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Polymer/vulcanize.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Polymer/vulcanize/issues"
+  },
+  "optionalDependencies": {
+    "update-notifier": "^0.5.0"
+  }
+}
